@@ -43,6 +43,11 @@ const checkInput = () => {
     } else {
         setSuccess(password)
     }
+
+    if (userNameValue != "" && passwordValue != "") {
+        alert("✅")
+
+    }
 }
 
 
@@ -61,5 +66,7 @@ const setError = (input, message) => {
 // When all operations and commands of the previous functions are correct
 const setSuccess = (input) => {
     const formControl = input.parentElement
+
     formControl.className = "form-control success"
 }
+
